@@ -36,7 +36,10 @@ export const Route = createRootRoute({
         { property: "og:description", content: "Ritesh Generated Project" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Ritesh App" },
+      { name: "twitter:description", content: "Ritesh Generated Project" },
+      { name: "twitter:site", content: "@Ritesh" },
+      { name: "twitter:creator", content: "@Ritesh" },
     ],
     links: [
       {
