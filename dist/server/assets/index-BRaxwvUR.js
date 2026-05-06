@@ -6,6 +6,4 @@ import "node:stream/web";
 import "node:stream";
 import "./router-CuSwdHdt.js";
 const SplitComponent = Home;
-export {
-  SplitComponent as component
-};
+export { SplitComponent as component };

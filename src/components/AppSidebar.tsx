@@ -60,12 +60,13 @@ export function AppSidebar() {
 
   const languages = useMemo(
     () => Array.from(new Set(mockRepos.map((r) => r.language))),
-    []
+    [],
   );
 
   const filtered = useMemo(() => {
     return mockRepos.filter((r) => {
-      if (query && !r.name.toLowerCase().includes(query.toLowerCase())) return false;
+      if (query && !r.name.toLowerCase().includes(query.toLowerCase()))
+        return false;
       if (language !== "all" && r.language !== language) return false;
       if (status !== "all" && r.health !== status) return false;
       return true;
@@ -152,7 +153,9 @@ export function AppSidebar() {
                         {!collapsed && (
                           <div className="flex flex-col min-w-0 flex-1">
                             <div className="flex items-center justify-between gap-2">
-                              <span className="truncate text-sm">{repo.name}</span>
+                              <span className="truncate text-sm">
+                                {repo.name}
+                              </span>
                               <span
                                 className={`h-1.5 w-1.5 rounded-full shrink-0 ${healthDot[repo.health]}`}
                               />

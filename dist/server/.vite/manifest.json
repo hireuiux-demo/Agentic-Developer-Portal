@@ -12,25 +12,18 @@
   "_Home-C8gCmGKB.js": {
     "file": "assets/Home-C8gCmGKB.js",
     "name": "Home",
-    "imports": [
-      "_worker-entry-YXVaySDz.js",
-      "_router-CuSwdHdt.js"
-    ]
+    "imports": ["_worker-entry-YXVaySDz.js", "_router-CuSwdHdt.js"]
   },
   "_router-CuSwdHdt.js": {
     "file": "assets/router-CuSwdHdt.js",
     "name": "router",
     "isDynamicEntry": true,
-    "imports": [
-      "_worker-entry-YXVaySDz.js"
-    ],
+    "imports": ["_worker-entry-YXVaySDz.js"],
     "dynamicImports": [
       "src/routes/index.tsx?tsr-split=component",
       "src/routes/repo.$repoId.tsx?tsr-split=component"
     ],
-    "assets": [
-      "assets/styles-DR5uOlhJ.css"
-    ]
+    "assets": ["assets/styles-DR5uOlhJ.css"]
   },
   "_worker-entry-YXVaySDz.js": {
     "file": "assets/worker-entry-YXVaySDz.js",
@@ -81,8 +74,6 @@
     "name": "index",
     "src": "virtual:cloudflare/worker-entry",
     "isEntry": true,
-    "imports": [
-      "_worker-entry-YXVaySDz.js"
-    ]
+    "imports": ["_worker-entry-YXVaySDz.js"]
   }
 }

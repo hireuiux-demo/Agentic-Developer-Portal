@@ -6,11 +6,7 @@ import "node:async_hooks";
 import "node:stream/web";
 import "node:stream";
 function RepoPage() {
-  const {
-    repoId
-  } = Route.useParams();
+  const { repoId } = Route.useParams();
   return /* @__PURE__ */ jsxRuntimeExports.jsx(Home, { repoId });
 }
-export {
-  RepoPage as component
-};
+export { RepoPage as component };

@@ -10,7 +10,8 @@ interface Props {
 function logColor(line: string): string {
   if (line.includes("✓") || /passed|success|complete/i.test(line))
     return "text-status-success";
-  if (line.includes("✗") || /fail|error/i.test(line)) return "text-status-failure";
+  if (line.includes("✗") || /fail|error/i.test(line))
+    return "text-status-failure";
   if (/warn|outdated|advisor/i.test(line)) return "text-amber-400";
   return "text-zinc-300";
 }

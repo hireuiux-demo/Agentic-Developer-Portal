@@ -1,7 +1,14 @@
 import type { Repo } from "@/data/mockRepos";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { GitPullRequest, Package, AlertTriangle, ShieldCheck, Activity, Play } from "lucide-react";
+import {
+  GitPullRequest,
+  Package,
+  AlertTriangle,
+  ShieldCheck,
+  Activity,
+  Play,
+} from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
 interface Props {
@@ -75,7 +82,9 @@ export function RepoOverview({ repo, onRunAgent }: Props) {
           label="Coverage"
           value={`${repo.coverage}%`}
           icon={ShieldCheck}
-          accent={repo.coverage >= 80 ? "text-status-success" : "text-amber-400"}
+          accent={
+            repo.coverage >= 80 ? "text-status-success" : "text-amber-400"
+          }
         />
         <Stat label="Health" value={repo.health} icon={Activity} />
       </div>

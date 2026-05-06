@@ -13,8 +13,7 @@ interface HomeProps {
 }
 
 export function Home({ repoId }: HomeProps) {
-  const selected: Repo =
-    mockRepos.find((r) => r.id === repoId) ?? mockRepos[0];
+  const selected: Repo = mockRepos.find((r) => r.id === repoId) ?? mockRepos[0];
 
   const [modalOpen, setModalOpen] = useState(false);
   const [activeTask, setActiveTask] = useState<AgentTask | null>(null);

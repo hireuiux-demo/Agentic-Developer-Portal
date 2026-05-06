@@ -27,7 +27,12 @@ interface Props {
   onClose: () => void;
 }
 
-export function AgentPanel({ repo, task, runId: initialRunId, onClose }: Props) {
+export function AgentPanel({
+  repo,
+  task,
+  runId: initialRunId,
+  onClose,
+}: Props) {
   const [logs, setLogs] = useState<string[]>([]);
   const [status, setStatus] = useState<AgentStatus>("pending");
   const [result, setResult] = useState<AgentResult | null>(null);
@@ -91,7 +96,12 @@ export function AgentPanel({ repo, task, runId: initialRunId, onClose }: Props) 
               </Button>
             </>
           )}
-          <Button variant="ghost" size="icon" className="h-7 w-7" onClick={onClose}>
+          <Button
+            variant="ghost"
+            size="icon"
+            className="h-7 w-7"
+            onClick={onClose}
+          >
             <X className="h-3.5 w-3.5" />
           </Button>
         </div>
